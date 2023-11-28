@@ -66,8 +66,8 @@ resource "null_resource" "ssh" {
   }
 
   provisioner "file" {
-    source      = "docker-deploy.sh"
-    destination = "/root/docker-deploy.sh"
+    source      = "app.py"
+    destination = "/root/app.py"
   }
 
   #  安装docker
